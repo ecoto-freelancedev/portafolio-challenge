@@ -4,6 +4,7 @@
     --color-de-fondo: #F5F5F5;
     --color-de-fondo-menu: #ffffff;
     --color-de-link: #000000;
+    --color-de-boton: #2A7AE4;
 }
 
 body {
@@ -15,7 +16,9 @@ body {
     line-height: 1.6;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
     list-style: none;
 }
 
@@ -34,7 +37,8 @@ a {
 }
 
 .cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    max-width: 80px;
+    /* Ajuste para pantallas pequeñas */
 }
 
 .cabecera__titulo {
@@ -49,6 +53,7 @@ a {
 .navegacion__elemento a {
     font-size: 0.9rem;
 }
+
 /* ------------------------------ Sección Presentación ------------------------------*/
 
 
@@ -65,7 +70,35 @@ a {
 
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 
+.contacto__texto {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+.contacto__campo {
+    height: 56px;
+}
+
+.contacto__campo:focus::placeholder {
+    color: var(--color-de-boton);
+}
+
+.contacto__campo--textarea {
+    height: 133px;
+}
+
+.contacto__boton {
+    width: 133px;
+    height: 40px;
+    background-color: var(--color-de-boton);
+    color: var(--color-de-fondo);
+}
 
 /* ------------------------------ Responsividad ---------------------------------------*/
 
@@ -99,6 +132,7 @@ a {
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
+
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
     .cabecera__titulo {
         font-size: 1.8rem;
@@ -106,5 +140,10 @@ a {
 
     .navegacion__elemento a {
         font-size: 1.1rem;
+    }
+
+    .contacto__boton {
+        width: 144px;
+        height: 51px;
     }
 }
