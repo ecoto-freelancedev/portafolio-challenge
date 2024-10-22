@@ -6,6 +6,7 @@
     --color-de-link: #000000;
     --color-celeste: #2A7AE4;
     --color-gris: #464646;
+    --color-de-fondo-contacto: #EAF2FD;
 }
 
 body {
@@ -114,6 +115,22 @@ a {
 }
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    background-color: var(--color-de-fondo-contacto);
+    display: flex;
+    gap: 20px;
+}
+
+.contacto__imagen {
+    display: none;
+}
+
+.contacto__titulo {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--color-gris);
+}
+
 .contacto__formulario {
     display: flex;
     flex-direction: column;
@@ -123,6 +140,7 @@ a {
 .contacto__texto {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    color: var(--color-gris);
 }
 
 .contacto__campo {
@@ -211,12 +229,15 @@ a {
         font-size: 1.1rem;
     }
 
+    .contacto__imagen {
+        display: flex;
+    }
+
     .contacto__boton {
         width: 144px;
         height: 51px;
     }
 
-    /*------------------------------ Sección de Proyectos --------------------------------*/
     .proyectos__contenedor {
         display: flex;
         flex-direction: column;
