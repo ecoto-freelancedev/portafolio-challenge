@@ -125,10 +125,24 @@ a {
     display: none;
 }
 
+.contacto__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .contacto__titulo {
     font-weight: bold;
     font-size: 2rem;
     color: var(--color-gris);
+    margin: 0;
+}
+
+.contacto__texto {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: var(--color-gris);
+    margin: 0;
 }
 
 .contacto__formulario {
@@ -137,18 +151,17 @@ a {
     gap: 32px;
 }
 
-.contacto__texto {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    color: var(--color-gris);
-}
-
 .contacto__campo {
     height: 56px;
 }
 
 .contacto__campo:focus::placeholder {
     color: var(--color-celeste);
+}
+
+.contacto__campo:focus {
+    border-color: var(--color-celeste);
+    outline: none;
 }
 
 .contacto__campo--textarea {
