@@ -181,6 +181,22 @@ a {
     color: var(--color-de-fondo);
 }
 
+/*------------------------------ Rodapie ---------------------------------*/
+.rodapie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-de-fondo-menu);
+    margin-top: 32px;
+}
+
+.rodapie__texto {
+    margin: 32px 65.5px;
+    text-align: center;
+    color: var(--color-gris);
+    font-size: 1rem;
+}
+
 /* ------------------------------ Responsividad ---------------------------------------*/
 /* Mobile */
 @media(min-width:390px) {
