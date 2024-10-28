@@ -73,6 +73,58 @@ a {
 
 /*------------------------------ Sección de Aficiones --------------------------------*/
 
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.formacion {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-de-fondo-contacto);
+    gap: 32px;
+    padding: 32px;
+}
+
+.formacion__titulo {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-gris);
+}
+
+.formacion__lista {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.formacion__elemento {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formacion__icono__container {
+    background-color: var(--color-de-fondo-menu);
+
+}
+
+.formacion__icono {
+    width: 50%;
+    height: auto;
+}
+
+.formacion__info__nombre {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-gris);
+}
+
+.formacion__info__detalle {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--color-gris);
+}
+
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
 .proyectos__imagen {
@@ -215,6 +267,27 @@ a {
         gap: 50px;
 
     }
+
+    .formacion__titulo {
+        font-size: 1.375rem;
+    }
+
+    .formacion__lista {
+        flex-direction: column;
+    }
+
+    .formacion__icono__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formacion__info__nombre {
+        font-size: 1rem;
+    }
+
+    .formacion__info__detalle {
+        font-size: 0.875rem;
+    }
 }
 
 /* Tablets y pantallas más grandes */
@@ -244,6 +317,27 @@ a {
         font-size: 1rem;
     }
 
+    .formacion__titulo {
+        font-size: 1.375rem;
+    }
+
+    .formacion__lista {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .formacion__icono {
+        margin: 29px 61px;
+    }
+
+    .formacion__info__nombre {
+        font-size: 1rem;
+    }
+
+    .formacion__info__detalle {
+        font-size: 0.875rem;
+    }
+
     .proyectos__contenedor {
         display: flex;
         flex-direction: column;
@@ -271,6 +365,26 @@ a {
     .contacto__boton {
         width: 144px;
         height: 51px;
+    }
+
+    .formacion__titulo {
+        font-size: 2rem;
+    }
+
+    .formacion__lista {
+        flex-direction: row;
+    }
+
+    .formacion__icono {
+        margin: 78px 89px;
+    }
+
+    .formacion__info__nombre {
+        font-size: 1.375rem;
+    }
+
+    .formacion__info__detalle {
+        font-size: 1rem;
     }
 
     .proyectos__contenedor {
