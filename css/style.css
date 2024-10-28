@@ -393,6 +393,10 @@ a {
         gap: 50px;
 
     }
+
+    .contacto {
+        padding: 32px;
+    }
 }
 
 /* Pantallas grandes */
@@ -486,5 +490,9 @@ a {
 
     .proyectos__info {
         width: 25%;
+    }
+
+    .contacto {
+        padding: 64px 152px;
     }
 }
