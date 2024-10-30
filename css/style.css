@@ -66,7 +66,35 @@ a {
 
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--color-de-fondo-contacto);
+}
 
+.sobre-mi__titulo {
+    margin: 0;
+    font-weight: bold;
+    color: var(--color-gris);
+}
+
+.sobre-mi__texto__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sobre-mi__texto {
+    margin: 0;
+    text-align: justify;
+    color: var(--color-gris);
+}
+
+.sobre-mi__firma {
+    width: 140px;
+    height: 52px;
+}
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
 .habilidades {
@@ -338,6 +366,18 @@ a {
         display: none;
     }
 
+    .sobre-mi {
+        padding: 32px;
+    }
+
+    .sobre-mi__titulo {
+        font-size: 1.375rem;
+    }
+
+    .sobre-mi__texto {
+        font-size: 0.875rem;
+    }
+
     .habilidades__titulo {
         font-size: 1.375rem;
     }
@@ -448,6 +488,18 @@ a {
         font-size: 1rem;
     }
 
+    .sobre-mi {
+        padding: 32px;
+    }
+
+    .sobre-mi__titulo {
+        font-size: 1.375rem;
+    }
+
+    .sobre-mi__texto {
+        font-size: 0.875rem;
+    }
+
     .habilidades__titulo {
         font-size: 1.375rem;
     }
@@ -541,6 +593,18 @@ a {
 
     .navegacion__elemento a {
         font-size: 1.1rem;
+    }
+
+    .sobre-mi {
+        padding: 64px 530px 64px 152px;
+    }
+
+    .sobre-mi__titulo {
+        font-size: 2rem;
+    }
+
+    .sobre-mi__texto {
+        font-size: 1rem;
     }
 
     .habilidades__titulo {
