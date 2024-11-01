@@ -63,7 +63,31 @@ a {
 }
 
 /* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion__foto {
+    width: 25%;
+    height: auto;
+}
 
+.presentacion__titulo {
+    margin: 0;
+    font-weight: bold;
+    color: var(--color-gris);
+}
+
+.presentacion__subtitulo {
+    margin: 0;
+    color: var(--color-gris);
+}
+
+.redes {
+    margin: 0;
+    padding: 0;
+}
+
+.redes__img {
+    font-weight: 100;
+    color: var(--color-gris);
+}
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi {
@@ -366,8 +390,35 @@ a {
         display: none;
     }
 
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 32px;
+    }
+
+    .presentacion__contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .presentacion__titulo {
+        font-size: 1.375rem;
+    }
+
+    .presentacion__subtitulo,
+    .redes__img {
+        font-size: 0.875rem;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .sobre-mi {
-        padding: 32px;
+        padding: 16px 32px;
     }
 
     .sobre-mi__titulo {
@@ -488,6 +539,34 @@ a {
         font-size: 1rem;
     }
 
+    .presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 32px;
+        padding: 32px;
+    }
+
+    .presentacion__contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .presentacion__titulo {
+        font-size: 1.375rem;
+    }
+
+    .presentacion__subtitulo,
+    .redes__img {
+        font-size: 1rem;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
     .sobre-mi {
         padding: 32px;
     }
@@ -593,6 +672,38 @@ a {
 
     .navegacion__elemento a {
         font-size: 1.1rem;
+    }
+
+    .presentacion {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 17px;
+        margin: 32px 152px;
+    }
+
+    .presentacion__contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .presentacion__titulo {
+        font-size: 3.25rem;
+    }
+
+    .presentacion__subtitulo {
+        font-size: 1.375rem;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: start;
+        gap: 32px;
+    }
+
+    .redes__img {
+        font-size: 1rem;
     }
 
     .sobre-mi {
