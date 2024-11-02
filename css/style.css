@@ -32,28 +32,41 @@ a {
 /* ------------------------------ Sección Menú -------------------------------*/
 .cabecera {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 1rem;
     background-color: var(--color-de-fondo-menu);
+
+}
+
+.cabecera__contenedor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .cabecera__logo {
-    max-width: 80px;
-    /* Ajuste para pantallas pequeñas */
+    width: 24px;
+    height: 24px;
 }
 
 .cabecera__titulo {
-    font-size: 1.2rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-gris);
     text-align: center;
 }
 
 .navegacion__lista {
-    display: none;
+    margin: 0;
+    display: flex;
+}
+
+.navegacion__elemento:nth-child(6) {
+    font-weight: bold;
 }
 
 .navegacion__elemento a {
-    font-size: 0.9rem;
+    color: var(--color-gris);
 }
 
 .secciones__contenedor {
@@ -381,6 +394,10 @@ a {
 /* ------------------------------ Responsividad ---------------------------------------*/
 /* Mobile */
 @media(min-width:390px) {
+    .cabecera {
+        height: 56px;
+        justify-content: space-evenly;
+    }
 
     .navegacion__elemento:nth-child(1),
     .navegacion__elemento:nth-child(2),
@@ -388,6 +405,10 @@ a {
     .navegacion__elemento:nth-child(4),
     .navegacion__elemento:nth-child(5) {
         display: none;
+    }
+
+    .navegacion__elemento {
+        font-size: 0.875rem;
     }
 
     .presentacion {
@@ -515,17 +536,22 @@ a {
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
     .cabecera {
-        flex-direction: row;
+        height: 56px;
         justify-content: space-between;
-        align-items: center;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
-    .cabecera__logo {
-        max-width: 100px;
+    .navegacion__elemento:nth-child(1),
+    .navegacion__elemento:nth-child(2),
+    .navegacion__elemento:nth-child(3),
+    .navegacion__elemento:nth-child(4),
+    .navegacion__elemento:nth-child(5) {
+        display: none;
     }
 
-    .cabecera__titulo {
-        font-size: 1.5rem;
+    .navegacion__elemento {
+        font-size: 1rem;
     }
 
     .navegacion__lista {
@@ -666,12 +692,24 @@ a {
 @media (min-width: 1024px) {
 
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera {
+        height: 88px;
+    }
+
     .cabecera__titulo {
-        font-size: 1.8rem;
+        font-size: 1rem;
+    }
+
+    .navegacion__elemento:nth-child(1),
+    .navegacion__elemento:nth-child(2),
+    .navegacion__elemento:nth-child(3),
+    .navegacion__elemento:nth-child(4),
+    .navegacion__elemento:nth-child(5) {
+        display: flex;
     }
 
     .navegacion__elemento a {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .presentacion {
