@@ -5,7 +5,7 @@
 </p>
 
 
-### ¡Bienvenido al proyecto base del Portafolio ! Pasos principales:
+### ¡Bienvenido a mi proyecto del Portafolio ! Pasos principales:
 ---
 #### Marca este proyecto con una estrella ⭐
 #### Sigue las lecciones y las instrucciones de contenido 📚
